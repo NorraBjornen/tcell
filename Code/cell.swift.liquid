@@ -1,0 +1,20 @@
+import DoubleCore
+import RxSwift
+import RxCocoa
+import RxDataSources
+
+struct {{ module_info.name }}CellData {
+
+}
+
+class {{ module_info.name }}Cell: UITableViewCell {
+
+}
+
+extension {{ module_info.name }}Cell: BaseTableViewCell {
+	func configure(for object: Any?) {
+		guard let cellObject = object as? {{ module_info.name }}CellData else { return }
+
+		
+	}
+}
